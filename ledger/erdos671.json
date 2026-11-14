@@ -1,0 +1,312 @@
+{
+ "missions": [
+  {
+   "schema_version": "nm-debrief-v1",
+   "created_by": "DEBRIEF/tools/new_mission.py",
+   "created_at": "2026-11-14T20:49:24Z",
+   "mission_id": "erdos671-2026-11",
+   "pod": "DEBRIEF-math-erdos671",
+   "provenance": {
+    "source": "public record to 2026-11-14: the problem page, its proof-claims thread and the claimants' public artifacts, pinned in claim.yaml"
+   },
+   "audience": "briefing",
+   "title": "The claimed solution of Erdős Problem #671 (Lagrange interpolation and the Lebesgue function)",
+   "kind": "audit",
+   "protocol_version": "0.1.0",
+   "claim_rule_met": false,
+   "label": "Erdős #671",
+   "area": "Analysis: polynomial interpolation",
+   "rests_on": "two written arguments and two Lean files, one pinned by hash and one a live-editor link",
+   "pods": [
+    "DEBRIEF-math-erdos671"
+   ],
+   "began": "2026-11-14",
+   "status": "active",
+   "record_quality": "full_ledger",
+   "record_note": "Opened at tier zero: the claim and its artifacts are pinned, the gaps are drawn, nothing has been run or read by Nervous Machine.",
+   "record_limits": [
+    "Nothing in this record has been checked by Nervous Machine or by anyone independent of the claimants; every item is an open gap."
+   ],
+   "scope_limits": [
+    "Nervous Machine keeps score of the checks; it does not check the mathematics line by line.",
+    "Public record through 2026-11-14."
+   ],
+   "opening": {
+    "spoken": "This record covers the claimed solution of Erdős problem #671: what has been claimed, what it rests on, and what would have to be checked by whom."
+   },
+   "short_version": {
+    "spoken": "Erdős asked whether a sequence of interpolation nodes can make the Lebesgue function blow up at a point, or everywhere, while Lagrange interpolation still converges somewhere for every continuous function. Two claimed solutions were listed in July 2026, both answering yes to both questions, both produced with AI systems and both with a Lean file. Nobody independent has reported building either Lean file or reading either argument. Everything here is open."
+   },
+   "what_happened": {
+    "spoken": "The claim was pinned from the public record: the problem page, the proof-claims thread, and every artifact the claimants made public, by commit or hash. Nothing was run. The gaps that follow are the checks still owed."
+   },
+   "implications": {
+    "rely_on": [],
+    "do_not_rely_on": [
+     {
+      "spoken": "the claimed solution as settled; nothing in it has standing yet",
+      "finding_ids": []
+     }
+    ],
+    "stop": [],
+    "new": []
+   },
+   "certainty_statement": {
+    "spoken": "Nothing is certified or accepted. Every item is open."
+   },
+   "sources": [
+    {
+     "kind": "problem",
+     "ref": "https://www.erdosproblems.com/671"
+    },
+    {
+     "kind": "overleaf",
+     "ref": "https://www.overleaf.com/read/gqmfrhsprtqm#59ac11"
+    },
+    {
+     "kind": "url",
+     "ref": "https://live.lean-lang.org/ (Lean snippet linked from the proof-claims thread; URL carries the code)"
+    },
+    {
+     "kind": "lean",
+     "ref": "https://quietmethod-erdos671.gintsuta-kobo.chatgpt.site/Erdos671_square_samples.lean (sha256 98375fe58e68a2392bfc6d24e4177e70634f9cd449d7d8bf633fd6fe313c8a00, 125059 bytes, fetched 2026-11-14)"
+    },
+    {
+     "kind": "pdf",
+     "ref": "https://quietmethod-erdos671.gintsuta-kobo.chatgpt.site/erdos-671-square-samples-proof.pdf (sha256 99d19938ec0a0165bbf7a888ae50ba1c4852c8beff30777c9b85950890401cc6, 209054 bytes, fetched 2026-11-14)"
+    }
+   ]
+  }
+ ],
+ "cycles": [
+  {
+   "schema_version": "nm-debrief-v1",
+   "created_by": "DEBRIEF/tools/new_mission.py",
+   "created_at": "2026-11-14T20:49:24Z",
+   "mission_id": "erdos671-2026-11",
+   "pod": "DEBRIEF-math-erdos671",
+   "provenance": {
+    "source": "public record to 2026-11-14: the problem page, its proof-claims thread and the claimants' public artifacts, pinned in claim.yaml"
+   },
+   "audience": "briefing",
+   "cycle": 0,
+   "dated": "2026-06-22 to 2026-11-14",
+   "kind": "replay",
+   "preregistered": {
+    "question": "What is on the public record about this claim?",
+    "rule": "no look-ahead; each event dated by its first public posting; artifacts pinned by commit or hash",
+    "predictions": [],
+    "commit": null,
+    "before_data": false
+   },
+   "outcome": {
+    "verdict": "admitted",
+    "numbers": {
+     "claims": 2,
+     "artifacts": 4
+    }
+   },
+   "spoken": "Terence Tao's Erdős-problems AI wiki listed an AI-standalone candidate full solution with Lean for problem 671, dated June 22, 2026, marked unverified; the wiki stopped updating on June 30. Liam Price listed a proof claim on the problem page: both questions answered in the affirmative by GPT Pro, with a Lean formalisation by GPT-5.5 in Codex. QuietMethod listed a second proof claim, described as an independent re-derivation and refinement of the first, with a Lean file and a PDF write-up; this record pins both files by hash as fetched on November 14, 2026. The problem page lists two proof claims, neither marked accepted by the site, and no third-party formalisation of the problem statement.",
+   "finding_ids": [],
+   "gap_ids": [
+    "EG1",
+    "EG2",
+    "EG3",
+    "EG4"
+   ]
+  }
+ ],
+ "findings": [],
+ "gaps": [
+  {
+   "schema_version": "nm-debrief-v1",
+   "created_by": "DEBRIEF/tools/new_mission.py",
+   "created_at": "2026-11-14T20:49:24Z",
+   "mission_id": "erdos671-2026-11",
+   "pod": "DEBRIEF-math-erdos671",
+   "provenance": {
+    "source": "public record to 2026-11-14: the problem page, its proof-claims thread and the claimants' public artifacts, pinned in claim.yaml"
+   },
+   "audience": "briefing",
+   "gap_id": "EG1",
+   "title": "The Lean development has not been built or kernel-checked by anyone outside the claimant",
+   "status": "proposed",
+   "opened_cycle": 0,
+   "priority": 1,
+   "history": [],
+   "closes_with": [
+    {
+     "what": "a pre-registered rerun: fetch at the pinned commit, build, confirm no sorry or admit, print the axioms",
+     "kind": "rerun",
+     "external": true,
+     "who_could_act": "anyone with a machine and a few hours"
+    }
+   ],
+   "spoken": "The claimant reports a Lean development that compiles with standard axioms only. Nobody outside the claimant has reported building it.",
+   "ask": {
+    "spoken": "A rerun of the Lean build on an independent machine, written down first."
+   },
+   "expected_signal": "a rerun cycle reporting build exit status, the sorry/admit scan and the axiom list for the main theorem",
+   "resolution_by": "none registered"
+  },
+  {
+   "schema_version": "nm-debrief-v1",
+   "created_by": "DEBRIEF/tools/new_mission.py",
+   "created_at": "2026-11-14T20:49:24Z",
+   "mission_id": "erdos671-2026-11",
+   "pod": "DEBRIEF-math-erdos671",
+   "provenance": {
+    "source": "public record to 2026-11-14: the problem page, its proof-claims thread and the claimants' public artifacts, pinned in claim.yaml"
+   },
+   "audience": "briefing",
+   "gap_id": "EG2",
+   "title": "Do the formal statements say what the problem asks?",
+   "status": "proposed",
+   "opened_cycle": 0,
+   "priority": 2,
+   "history": [],
+   "closes_with": [
+    {
+     "what": "two independent mathematicians read the formal statement against the problem as posed and sign, or refuse",
+     "kind": "read",
+     "external": true,
+     "who_could_act": "a mathematician in the problem's area, about an hour with a reading guide"
+    }
+   ],
+   "spoken": "A Lean check establishes that the formal statement follows from its hypotheses. Whether that formal statement is the problem Erdős posed is a separate question that a person has to answer. No third-party formalization of the problem statement is recorded, so the comparison is entirely a human read.",
+   "ask": {
+    "spoken": "A reading of the formal statement against the problem as posed, by someone who did not write it."
+   },
+   "expected_signal": "a trace cycle and two signed read cycles, or a refusal naming the difference",
+   "resolution_by": "none registered"
+  },
+  {
+   "schema_version": "nm-debrief-v1",
+   "created_by": "DEBRIEF/tools/new_mission.py",
+   "created_at": "2026-11-14T20:49:24Z",
+   "mission_id": "erdos671-2026-11",
+   "pod": "DEBRIEF-math-erdos671",
+   "provenance": {
+    "source": "public record to 2026-11-14: the problem page, its proof-claims thread and the claimants' public artifacts, pinned in claim.yaml"
+   },
+   "audience": "briefing",
+   "gap_id": "EG3",
+   "title": "No independent mathematician has reported reading the proof, and there is no referee report",
+   "status": "proposed",
+   "opened_cycle": 0,
+   "priority": 3,
+   "history": [],
+   "closes_with": [
+    {
+     "what": "a read cycle by a mathematician in the area who is not an author, signing or refusing each main step",
+     "kind": "read",
+     "external": true,
+     "who_could_act": "a mathematician in the problem's area"
+    },
+    {
+     "what": "a referee report or journal acceptance, recorded by date",
+     "kind": "measurement",
+     "external": true,
+     "who_could_act": "a journal; the record notes the date when it happens"
+    }
+   ],
+   "spoken": "The claim is listed on the problem's page, which states that appearing there is no guarantee of correctness and that nobody associated with the site has examined it. No independent reading is on the public record.",
+   "ask": {
+    "spoken": "Someone in the field reads it and says, under their name, what holds and what does not."
+   },
+   "expected_signal": "a signed or refused read cycle; a dated referee report",
+   "resolution_by": "none registered"
+  },
+  {
+   "schema_version": "nm-debrief-v1",
+   "created_by": "DEBRIEF/tools/new_mission.py",
+   "created_at": "2026-11-14T20:49:24Z",
+   "mission_id": "erdos671-2026-11",
+   "pod": "DEBRIEF-math-erdos671",
+   "provenance": {
+    "source": "public record to 2026-11-14: the problem page, its proof-claims thread and the claimants' public artifacts, pinned in claim.yaml"
+   },
+   "audience": "briefing",
+   "gap_id": "EG4",
+   "title": "The first claim's artifacts are not fixed files",
+   "status": "proposed",
+   "opened_cycle": 0,
+   "priority": 4,
+   "history": [],
+   "closes_with": [
+    {
+     "what": "the claimant publishes the Lean development and write-up as fixed files or a repository at a commit",
+     "kind": "data_release",
+     "external": true,
+     "who_could_act": "the claimant"
+    }
+   ],
+   "spoken": "The first claim points to an Overleaf document and a live-editor Lean snippet. Neither can be pinned by hash, so a rerun of that claim has nothing fixed to rerun until the claimant publishes a file or repository.",
+   "ask": {
+    "spoken": "the claimant publishes the Lean development and write-up as fixed files or a repository at a commit"
+   },
+   "expected_signal": "a data or claim cycle pinning the files by hash",
+   "resolution_by": "none registered"
+  }
+ ],
+ "anomalies": [],
+ "background": [
+  {
+   "schema_version": "nm-debrief-v1",
+   "created_by": "DEBRIEF/tools/new_mission.py",
+   "created_at": "2026-11-14T20:49:24Z",
+   "mission_id": "erdos671-2026-11",
+   "pod": "DEBRIEF-math-erdos671",
+   "provenance": {
+    "source": "public record to 2026-11-14: the problem page, its proof-claims thread and the claimants' public artifacts, pinned in claim.yaml"
+   },
+   "audience": "briefing",
+   "term": "Erdős Problem #671",
+   "spoken": "For each n take n nodes in [-1,1] and interpolate a continuous function f by the polynomial of degree n-1 that agrees with f at those nodes. The Lebesgue function at a point x is the sum of the absolute values of the fundamental polynomials at x; Bernstein showed it is unbounded at some point for every choice of nodes. Erdős asked two things. First: can the nodes be chosen so that for every continuous f there is a point where the Lebesgue function is unbounded and yet the interpolants converge to f? Second: can the nodes be chosen so that the Lebesgue function is unbounded at every point, and yet for every continuous f the interpolants converge to f somewhere?",
+   "source": "https://www.erdosproblems.com/671"
+  },
+  {
+   "schema_version": "nm-debrief-v1",
+   "created_by": "DEBRIEF/tools/new_mission.py",
+   "created_at": "2026-11-14T20:49:24Z",
+   "mission_id": "erdos671-2026-11",
+   "pod": "DEBRIEF-math-erdos671",
+   "provenance": {
+    "source": "public record to 2026-11-14: the problem page, its proof-claims thread and the claimants' public artifacts, pinned in claim.yaml"
+   },
+   "audience": "briefing",
+   "term": "Proof claims on erdosproblems.com",
+   "spoken": "The site lets anyone list a claimed proof. Its own text says that appearing there is no guarantee of correctness and does not mean anyone associated with the site has examined it. A listed claim is where checking starts, not where it ends.",
+   "source": "https://www.erdosproblems.com/forum/thread/671/proof-claims"
+  },
+  {
+   "schema_version": "nm-debrief-v1",
+   "created_by": "DEBRIEF/tools/new_mission.py",
+   "created_at": "2026-11-14T20:49:24Z",
+   "mission_id": "erdos671-2026-11",
+   "pod": "DEBRIEF-math-erdos671",
+   "provenance": {
+    "source": "public record to 2026-11-14: the problem page, its proof-claims thread and the claimants' public artifacts, pinned in claim.yaml"
+   },
+   "audience": "briefing",
+   "term": "The claim by Liam Price",
+   "spoken": "The claimant states that GPT Pro answered both questions in the affirmative, and that a Lean formalisation of the argument was produced by GPT-5.5 in Codex. The proof-claims thread links an Overleaf read-only document and a Lean snippet in the live Lean web editor; neither is a fixed, hashable file, so this record pins the links and the date only. Attribution of these two links to this claim is by elimination from the thread's link list.",
+   "source": "https://www.erdosproblems.com/forum/thread/671/proof-claims"
+  },
+  {
+   "schema_version": "nm-debrief-v1",
+   "created_by": "DEBRIEF/tools/new_mission.py",
+   "created_at": "2026-11-14T20:49:24Z",
+   "mission_id": "erdos671-2026-11",
+   "pod": "DEBRIEF-math-erdos671",
+   "provenance": {
+    "source": "public record to 2026-11-14: the problem page, its proof-claims thread and the claimants' public artifacts, pinned in claim.yaml"
+   },
+   "audience": "briefing",
+   "term": "The claim by QuietMethod",
+   "spoken": "A second claim, described by its author as an independent re-derivation and quantitative refinement of the first, not claiming priority for the construction. It builds nested intervals of nodes so that the Lebesgue function exceeds any bound everywhere, while a pigeonhole choice at each stage keeps the interpolation error small for a given f. The author reports a Lean formalisation checked with Lean 4.33.0-rc1 and Mathlib, with no sorry or admit, and with the axioms reported as propext, Classical.choice and Quot.sound.",
+   "source": "https://www.erdosproblems.com/forum/thread/671/proof-claims"
+  }
+ ],
+ "sessions": []
+}
