@@ -1,0 +1,51 @@
+# Cycle 1: a definitional trace (reading guide) of the claimants' formal statements, for human semantic review.
+# Pre-registered in prereg_trace.yaml (hashed 2026-11-17T18:07:18Z) before the definitions behind the statements were read.
+kind: trace
+cycle: 1
+dated: "2026-11-17"
+by: "Nervous Machine (Heidi Bennett; Claude Code as the operating agent)"
+not_an_author_of_the_claim: true
+preregistered:
+  commit: "prereg_trace.yaml"
+  results: ["trace/DEFINITIONAL-TRACE.md", "cycles/trace-1/Trace.lean", "cycles/trace-1/lzdecode.py"]
+  question: "Can the open semantic gap (EG2) be made cheaper for a human reviewer: the problem as posed, the claimants' own formal statements (there is no third-party one), every definition behind them, a plain rendering, and the points to confirm?"
+  rule: "Statements quoted verbatim from the pinned files with file and line; Price's text pinned by the hash of its full live-editor link and of the decoded text; renderings marked as the agent's; every discrepancy recorded whether harmless or not; worked examples written but not run, and no result claimed from them; standing unchanged by construction."
+  predictions:
+    - "P1: the two claimants state the same theorem with the same definitions; the files differ only inside proofs"
+    - "P2: erdos_671 states Q2 and, as its last conjunct, Q1; 'square samples' is a proof parameter, not a restriction"
+    - "P3: cofinal unboundedness renders to limsup = infinity, Tendsto to full-sequence convergence; the shift X n : Row (n + 1) covers every row size"
+    - "P4: the points to check sit in the claimants' own definitions (Interval, Row, fundamental, interpolant, lebesgue); at least one convention needs a sentence, none changes the meaning"
+  before_data: true
+outcome:
+  verdict: confirmed
+  numbers:
+    statements_traced: 2
+    pieces_traced: 9
+    definitions_cited: 18
+    discrepancies_recorded: 10
+    content_affecting_discrepancies_seen_by_agent: 0
+    anomalies_opened: 0
+    worked_examples_written: 7
+    worked_examples_checked_by_lean: 0
+    human_review: false
+    checklist_items: 6
+    price_link_characters_listed: 2048
+    price_link_characters_full: 60947
+    price_decoded_sha256: "3854ae85aca322b5ad2c65fb9c7bae5ca19ed939ceca99521365d8690b8d8923"
+    quietmethod_file_sha256_matches_claim: true
+    diff_hunks_between_files: 27
+    diff_hunks_touching_statement_or_definitions: 0
+  misses: []
+spoken: >-
+  Nervous Machine wrote the reading guide for the one question on this record that a machine cannot settle: whether the
+  Lean statement of problem 671 says what Erdős asked. There is no third-party formal statement, so the guide lays the
+  claimants' own statement beside the problem page. On the way it recovered the first claimant's full Lean text: the
+  link listed on the problem page is cut off at 2048 characters, but the full link is in the claimant's own comments,
+  and decoding it offline gives a file now pinned by hash. That file and the second claimant's file state the same
+  theorem with the same definitions; the second is the first with changes inside the proofs, as its author's page says.
+  The guide traces every symbol to Mathlib with file and line and records ten conventions, none of which changes the
+  meaning in the agent's reading. Seven worked examples are written for Lean but have not been run. The readings are
+  the system's, not a mathematician's, so nothing changed standing. An analyst can now sign or refuse four lines in
+  under an hour.
+finding_ids: []
+gap_ids: ["EG2", "EG4"]

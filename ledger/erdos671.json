@@ -23,9 +23,9 @@
    "began": "2026-11-14",
    "status": "active",
    "record_quality": "full_ledger",
-   "record_note": "Opened at tier zero: the claim and its artifacts are pinned, the gaps are drawn, nothing has been run or read by Nervous Machine.",
+   "record_note": "Opened at tier zero on 2026-11-14: the claim and its artifacts pinned, the gaps drawn. Cycle 1, 2026-11-17: the reading guide for the semantic question, with the first claim's full Lean text recovered from its live-editor link and pinned by hash. Nothing has been built or run.",
    "record_limits": [
-    "Nothing in this record has been checked by Nervous Machine or by anyone independent of the claimants; every item is an open gap."
+    "Nothing in this record has been built, run or checked by Nervous Machine or by anyone independent of the claimants. The reading guide is the operating agent's reading; its worked examples are written but not run."
    ],
    "scope_limits": [
     "Nervous Machine keeps score of the checks; it does not check the mathematics line by line.",
@@ -38,7 +38,7 @@
     "spoken": "Erdős asked whether a sequence of interpolation nodes can make the Lebesgue function blow up at a point, or everywhere, while Lagrange interpolation still converges somewhere for every continuous function. Two claimed solutions were listed in July 2026, both answering yes to both questions, both produced with AI systems and both with a Lean file. Nobody independent has reported building either Lean file or reading either argument. Everything here is open."
    },
    "what_happened": {
-    "spoken": "The claim was pinned from the public record: the problem page, the proof-claims thread, and every artifact the claimants made public, by commit or hash. Nothing was run. The gaps that follow are the checks still owed."
+    "spoken": "The claim was pinned from the public record: the problem page, the proof-claims thread, and every artifact the claimants made public, by commit or hash. Nervous Machine then wrote a reading guide that lays the Lean statement beside the problem page, definition by definition. Doing so it found that the first claim's listed Lean link is cut off at 2048 characters, recovered the full link from the claimant's own comments, decoded it offline and pinned the text by hash, and found that the second claim's Lean file is the first with changes inside the proofs only, so both claims state the same theorem. Nothing was built or run. The gaps that follow are the checks still owed."
    },
    "implications": {
     "rely_on": [],
@@ -74,6 +74,10 @@
     {
      "kind": "pdf",
      "ref": "https://quietmethod-erdos671.gintsuta-kobo.chatgpt.site/erdos-671-square-samples-proof.pdf (sha256 99d19938ec0a0165bbf7a888ae50ba1c4852c8beff30777c9b85950890401cc6, 209054 bytes, fetched 2026-11-14)"
+    },
+    {
+     "kind": "url",
+     "ref": "https://live.lean-lang.org/#codez=… full link (60947 characters, sha256 548e62861f2edfca7ac1f52fd44144a4bf2d22d4ce628e58ee00340be16383b2) from Liam Price's comment of 2026-07-15 on the proof claim; decoded Lean text sha256 3854ae85aca322b5ad2c65fb9c7bae5ca19ed939ceca99521365d8690b8d8923, 125059 bytes (cycle 1)"
     }
    ]
   }
@@ -112,6 +116,67 @@
     "EG1",
     "EG2",
     "EG3",
+    "EG4"
+   ]
+  },
+  {
+   "schema_version": "nm-debrief-v1",
+   "mission_id": "erdos671-2026-11",
+   "pod": "DEBRIEF-math-erdos671",
+   "created_by": "contributed cycle (merge_cycles.py)",
+   "created_at": "2026-11-17T18:12:11Z",
+   "provenance": {
+    "source": "contributed cycle file trace-1.yaml"
+   },
+   "audience": "briefing",
+   "kind": "trace",
+   "cycle": 1,
+   "dated": "2026-11-17",
+   "by": "Nervous Machine (Heidi Bennett; Claude Code as the operating agent)",
+   "not_an_author_of_the_claim": true,
+   "preregistered": {
+    "commit": "prereg_trace.yaml",
+    "results": [
+     "trace/DEFINITIONAL-TRACE.md",
+     "cycles/trace-1/Trace.lean",
+     "cycles/trace-1/lzdecode.py"
+    ],
+    "question": "Can the open semantic gap (EG2) be made cheaper for a human reviewer: the problem as posed, the claimants' own formal statements (there is no third-party one), every definition behind them, a plain rendering, and the points to confirm?",
+    "rule": "Statements quoted verbatim from the pinned files with file and line; Price's text pinned by the hash of its full live-editor link and of the decoded text; renderings marked as the agent's; every discrepancy recorded whether harmless or not; worked examples written but not run, and no result claimed from them; standing unchanged by construction.",
+    "predictions": [
+     "P1: the two claimants state the same theorem with the same definitions; the files differ only inside proofs",
+     "P2: erdos_671 states Q2 and, as its last conjunct, Q1; 'square samples' is a proof parameter, not a restriction",
+     "P3: cofinal unboundedness renders to limsup = infinity, Tendsto to full-sequence convergence; the shift X n : Row (n + 1) covers every row size",
+     "P4: the points to check sit in the claimants' own definitions (Interval, Row, fundamental, interpolant, lebesgue); at least one convention needs a sentence, none changes the meaning"
+    ],
+    "before_data": true
+   },
+   "outcome": {
+    "verdict": "confirmed",
+    "numbers": {
+     "statements_traced": 2,
+     "pieces_traced": 9,
+     "definitions_cited": 18,
+     "discrepancies_recorded": 10,
+     "content_affecting_discrepancies_seen_by_agent": 0,
+     "anomalies_opened": 0,
+     "worked_examples_written": 7,
+     "worked_examples_checked_by_lean": 0,
+     "human_review": false,
+     "checklist_items": 6,
+     "price_link_characters_listed": 2048,
+     "price_link_characters_full": 60947,
+     "price_decoded_sha256": "3854ae85aca322b5ad2c65fb9c7bae5ca19ed939ceca99521365d8690b8d8923",
+     "quietmethod_file_sha256_matches_claim": true,
+     "diff_hunks_between_files": 27,
+     "diff_hunks_touching_statement_or_definitions": 0
+    },
+    "misses": []
+   },
+   "spoken": "Nervous Machine wrote the reading guide for the one question on this record that a machine cannot settle: whether the Lean statement of problem 671 says what Erdős asked. There is no third-party formal statement, so the guide lays the claimants' own statement beside the problem page. On the way it recovered the first claimant's full Lean text: the link listed on the problem page is cut off at 2048 characters, but the full link is in the claimant's own comments, and decoding it offline gives a file now pinned by hash. That file and the second claimant's file state the same theorem with the same definitions; the second is the first with changes inside the proofs, as its author's page says. The guide traces every symbol to Mathlib with file and line and records ten conventions, none of which changes the meaning in the agent's reading. Seven worked examples are written for Lean but have not been run. The readings are the system's, not a mathematician's, so nothing changed standing. An analyst can now sign or refuse four lines in under an hour.",
+   "finding_ids": [],
+   "gap_ids": [
+    "EG2",
     "EG4"
    ]
   }
@@ -161,10 +226,17 @@
    "audience": "briefing",
    "gap_id": "EG2",
    "title": "Do the formal statements say what the problem asks?",
-   "status": "proposed",
+   "status": "in_cycle",
    "opened_cycle": 0,
    "priority": 2,
-   "history": [],
+   "history": [
+    {
+     "cycle": 1,
+     "hypothesis": "a definitional trace makes the human read cheap",
+     "before_data": true,
+     "result": "trace/DEFINITIONAL-TRACE.md written: the claimants' statement (the same text in both files) and its definitions traced to Mathlib at v4.33.0-rc1, nine pieces rendered, ten conventions and observations recorded, none content-affecting in the agent's reading; seven worked examples written, none run; status proposed -> in_cycle, the ask is now to sign or refuse the checklist"
+    }
+   ],
    "closes_with": [
     {
      "what": "two independent mathematicians read the formal statement against the problem as posed and sign, or refuse",
@@ -175,9 +247,9 @@
    ],
    "spoken": "A Lean check establishes that the formal statement follows from its hypotheses. Whether that formal statement is the problem Erdős posed is a separate question that a person has to answer. No third-party formalization of the problem statement is recorded, so the comparison is entirely a human read.",
    "ask": {
-    "spoken": "A reading of the formal statement against the problem as posed, by someone who did not write it."
+    "spoken": "A mathematician who is not an author reads trace/DEFINITIONAL-TRACE.md against the Lean statement and the problem page and signs or refuses its four checklist lines (A1 to A4), in about forty-five minutes. Two independent signatures close this gap for both claims, which state the same theorem."
    },
-   "expected_signal": "a trace cycle and two signed read cycles, or a refusal naming the difference",
+   "expected_signal": "two signed read cycles with no refusal, or a refusal naming the line and the difference",
    "resolution_by": "none registered"
   },
   {
@@ -232,7 +304,14 @@
    "status": "proposed",
    "opened_cycle": 0,
    "priority": 4,
-   "history": [],
+   "history": [
+    {
+     "cycle": 1,
+     "hypothesis": "the first claim's Lean text can be fixed from the public record",
+     "before_data": true,
+     "result": "the listed link is truncated at 2048 characters; the full link (60947 characters) is in the claimant's comment of 2026-07-15 and decodes offline to a 125059-byte Lean file, now pinned by hash in the trace. The Overleaf write-up is still not a fixed file; status stays proposed"
+    }
+   ],
    "closes_with": [
     {
      "what": "the claimant publishes the Lean development and write-up as fixed files or a repository at a commit",

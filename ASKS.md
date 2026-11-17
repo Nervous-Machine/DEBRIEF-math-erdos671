@@ -16,11 +16,11 @@ Signal expected: a rerun cycle reporting build exit status, the sorry/admit scan
 
 A Lean check establishes that the formal statement follows from its hypotheses. Whether that formal statement is the problem Erdős posed is a separate question that a person has to answer. No third-party formalization of the problem statement is recorded, so the comparison is entirely a human read.
 
-Status: proposed.
+Status: in cycle.
 
 - **two independent mathematicians read the formal statement against the problem as posed and sign, or refuse** — contribution kind: read; who could act: a mathematician in the problem's area, about an hour with a reading guide.
 
-Signal expected: a trace cycle and two signed read cycles, or a refusal naming the difference. Resolution by: none registered.
+Signal expected: two signed read cycles with no refusal, or a refusal naming the line and the difference. Resolution by: none registered.
 
 ## 3. No independent mathematician has reported reading the proof, and there is no referee report (ledger id EG3)
 
