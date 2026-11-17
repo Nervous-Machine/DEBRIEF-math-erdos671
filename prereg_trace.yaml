@@ -1,0 +1,74 @@
+# Pre-registration, cycle 1: a definitional trace (reading guide) of the claimants' formal statements of Erdős Problem
+# #671, for human semantic review. Written 2026-11-17 at tier zero (nothing built or run) and BEFORE reading the
+# definitions behind those statements (in the claimants' files or in Mathlib) or writing any rendering. There is no
+# third-party formal statement of this problem, so the reader compares each claimant's own statement to the problem page.
+# Changes after this point go in an amendment at the end.
+mission: DEBRIEF-math-erdos671
+cycle: 1
+dated: "2026-11-17"
+by: "Nervous Machine (Heidi Bennett; Claude Code as the operating agent)"
+question: >
+  Can the open semantic gap (EG2: do the claimants' formal statements say what Erdős asked?) be made cheaper for a
+  human reviewer, by laying out the problem as posed, each claimant's formal statement verbatim, every definition it
+  depends on down to Mathlib, a plain rendering of each, and the specific points a mathematician has to confirm?
+what_this_cycle_is:
+  - "An aid for review: trace/DEFINITIONAL-TRACE.md plus a file of small worked examples (cycles/trace-1/Trace.lean)
+     written for Lean but NOT run: no Lean, lake or claimant code is executed in this cycle."
+  - "A pinning of the first claim's Lean text: the full live-editor link is decoded (lz-string, base64 form) offline and
+     the decoded text is pinned by sha256, since the claim file could pin only the link."
+  - "The renderings are the operating agent's reading of Lean and Mathlib source. They are a reading, not a check."
+what_this_cycle_is_not:
+  - "Not an independent human semantic review. EG2 stays open after this cycle whatever the trace says; the trace moves
+     no standing."
+  - "Not a build. Nothing here says either file compiles (EG1), and the worked examples are unchecked until someone runs them."
+  - "It does not read or judge either written argument (EG3)."
+rules:
+  R1: "Every Lean statement and definition is quoted verbatim from the pinned files (QuietMethod's file, sha256 98375fe5...,
+       re-fetched and re-hashed; Price's text as decoded from the live-editor link, pinned by the sha256 of the decoded text
+       and of the link) or from a named Mathlib revision, with file and line. Where the files do not name a Mathlib
+       revision, the trace says which one it read and why."
+  R2: "Each rendering is marked as the agent's reading. Where the agent is unsure what a definition means, it says so."
+  R3: "Any place where a formal statement and the problem as posed differ in a way the agent can see (which nodes and how
+       many per row; distinctness; the domain of f and of x; limsup = infinity versus 'cofinally at least A'; full-sequence
+       versus subsequence convergence; the order of the quantifiers over f and x; whether each question is stated or only
+       one; a special construction in place of the general question) is recorded as a discrepancy whether or not it looks
+       harmless, and as an anomaly in the ledger if it could change the meaning."
+  R4: "Worked examples are written for Lean but are not run in this cycle; the trace and the cycle say so and claim no
+       result from them. They count as checked only when a later cycle runs them and pins the transcript."
+observed_before_this_prereg:
+  - "The problem page (erdosproblems.com/671, last edited 23 January 2026): nodes a_i^n in [-1,1] for 1 <= i <= n;
+     p_i^n the fundamental polynomials of degree n-1; L^n f = sum f(a_i^n) p_i^n. Q1: are there nodes such that for every
+     continuous f on [-1,1] there is x in [-1,1] with limsup_n sum_i |p_i^n(x)| = infinity and L^n f(x) -> f(x)? Q2: are
+     there nodes with that limsup infinite at every x, and yet for every continuous f some x with L^n f(x) -> f(x)?
+     The page lists the formalised statement as 'No'."
+  - "The proof-claims thread's 'External link to formalisation' for Price's claim is exactly 2048 characters and decodes
+     to the module docstring only, with no end-of-stream marker. A comment on the claim (Boris Alexeev, 16 July 2026) says
+     that link is truncated at 2048 characters and the full one is over 60000. Price's own comment of 15 July 2026 on the
+     claim, and his 22 June 2026 post in the problem's discussion thread, carry the same full link (60947 characters);
+     it decodes to a 125059-byte Lean file ending with an end-of-stream marker."
+  - "A line diff of that decoded file against QuietMethod's pinned file (re-fetched 2026-11-17, sha256 matches
+     claim.yaml): same length and line count; the differences are k^3 -> k^2 in the pigeonhole lemma and stage sample
+     count, the matching error bounds, and two proof lines. The final theorem erdos_671 is the same text in both."
+  - "The bare statement of erdos_671 (last lines of both files): there is X : forall n : N, Row (n + 1) with
+     (nodeSet (X n)).card = n + 1; for all x : Interval, A, N there is n >= N with A <= lebesgue (X n) x; and for every
+     f : C(Interval, R) there is x : Interval with Tendsto (fun n => interpolant (X n) f x) atTop (nhds (f x)) and the
+     same unboundedness at x. Row, nodeSet, Interval, lebesgue and interpolant are defined in the files; not yet read."
+predictions:
+  P1: "The two claimants state the same theorem (same text, same definitions), so one trace covers both; the diff
+       touches only proof-internal constants."
+  P2: "erdos_671 states Q2 directly and Q1 as its last conjunct (the x chosen for f also carries the unbounded Lebesgue
+       function), so both questions are covered; it is an existence statement for one constructed array, which is what
+       both questions ask for. 'square samples' names a proof parameter (k^2 + 1 samples per stage), not a restriction
+       of the statement."
+  P3: "'for all A, N there is n >= N with A <= lebesgue' renders to limsup = infinity, and Tendsto of the full sequence
+       renders to L^n f(x) -> f(x); the reindexing X n : Row (n + 1) covers every row size 1, 2, 3, ..."
+  P4: "The places a reader must check are in the claimants' own definitions, not in Mathlib: that Interval is [-1,1],
+       that a Row's nodes lie in [-1,1] and are distinct, that fundamental is the Lagrange basis polynomial of degree
+       n - 1, that interpolant is sum f(a) * fundamental, and that lebesgue is sum |fundamental|. The agent expects these
+       to match the page with at least one convention needing a sentence (candidates: fundamental as a function on R
+       rather than a polynomial; the node index type; card = n + 1 as the only size constraint) and none changing the
+       meaning."
+standing_consequences:
+  any_outcome: "EG2 remains open. Its ask changes from 'read the formal statement' to 'read the trace against the formal
+                statement and the problem page, and sign or refuse each checklist item'."
+  discrepancy_found: "An anomaly is opened naming it; if it could change the meaning, the EG2 gap text says so the same day."
